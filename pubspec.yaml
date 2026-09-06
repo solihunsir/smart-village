@@ -1,0 +1,72 @@
+name: desaku
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0" # Menggunakan rentang yang benar untuk SDK ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Lokalisasi dan Internasionalisasi
+  intl: ^0.20.2
+  flutter_localizations:
+    sdk: flutter
+
+  # UI dan Ikon
+  cupertino_icons: ^1.0.8
+  salomon_bottom_bar: ^3.3.2
+
+  # Jaringan dan Data
+  http: ^1.1.0
+  dio: ^5.4.0
+  shared_preferences: ^2.2.2
+  url_launcher: ^6.3.2
+  http_parser: ^4.0.0
+  image_picker: ^1.0.4
+
+  # Peta
+  flutter_map: ^8.2.2
+  latlong2: ^0.9.1
+  geolocator: ^14.0.2
+  flutter_secure_storage: ^9.2.4
+  flutter_svg: ^2.2.3 # Sudah ada, ini bagus untuk memuat SVG
+  provider: ^6.1.5+1
+  flutter_web_frame: ^1.0.0
+  device_wrapper: ^1.2.1
+  google_sign_in: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+flutter:
+  uses-material-design: true
+
+  # Perbaikan utama: CUKUP DAFTARKAN FOLDER UTAMA SAJA.
+  # Ini mencakup semua file SVG/PNG di dalamnya.
+  assets:
+    - assets/images/
+    - assets/fonts/ # Pastikan folder ini ada jika Anda mendaftarkannya
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto/Roboto-Italic-VariableFont_wdth,wght.ttf
+        - asset: assets/fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf
+          weight: 700
+
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf
+        - asset: assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf
+          weight: 700

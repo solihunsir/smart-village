@@ -1,0 +1,8 @@
+services:
+  web:
+    # build: . 
+    image: ghcr.io/citiasia-inc/smart-village-ecosystem-mobile:latest
+    container_name: "smart-village-mobile" 
+    ports:
+      - "4022:80"
+    restart: always
